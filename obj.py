@@ -68,7 +68,7 @@ class Status:
     def update(self):
 
         t1 = self.font.render(f"{self.brush.color[0]}, {self.brush.color[1]}, {self.brush.color[2]}", True, self.textcolor)
-        t2 = self.font.render(f"{self.brush.width}", True, self.textcolor)
+        t2 = self.font.render(f"Width: {self.brush.width}", True, self.textcolor)
         rect = pg.draw.rect(self.screen, self.brush.color, self.rectpos)
         
         return [[t1, self.text1pos], [t2, self.text2pos]]
